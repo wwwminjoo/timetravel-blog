@@ -1,0 +1,285 @@
+/* ===== Reset & Base ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css');
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #e0e0e0;
+  background: #121212;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #90caf9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Layout ===== */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Header ===== */
+.site-header {
+  border-bottom: 1px solid #2a2a2a;
+  background: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.site-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.site-title a {
+  color: inherit;
+}
+
+.site-title a:hover {
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.site-nav a {
+  color: #aaa;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.site-nav a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ===== Hero / Intro ===== */
+.intro {
+  padding: 60px 0 48px;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #aaa;
+  max-width: 560px;
+}
+
+/* ===== Section ===== */
+.section {
+  padding: 40px 0;
+}
+
+.section-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 24px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #90caf9;
+  display: inline-block;
+}
+
+/* ===== Post List ===== */
+.post-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-item {
+  padding: 20px 0;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.post-item:last-child {
+  border-bottom: none;
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+.post-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.post-title a {
+  color: #e0e0e0;
+}
+
+.post-title a:hover {
+  color: #90caf9;
+  text-decoration: none;
+}
+
+.post-summary {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: #888;
+}
+
+.more-link {
+  display: inline-block;
+  margin-top: 24px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* ===== Post Detail ===== */
+.post-header {
+  padding: 60px 0 24px;
+  border-bottom: 1px solid #2a2a2a;
+  margin-bottom: 32px;
+}
+
+.post-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.post-header .post-date {
+  font-size: 0.9rem;
+}
+
+.post-body {
+  padding-bottom: 60px;
+}
+
+.post-body p {
+  margin-bottom: 1.5em;
+}
+
+.post-body h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+  color: #fff;
+}
+
+.post-body h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+  color: #ddd;
+}
+
+.post-body ul,
+.post-body ol {
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
+}
+
+.post-body li {
+  margin-bottom: 0.4em;
+}
+
+.post-body blockquote {
+  border-left: 3px solid #90caf9;
+  padding-left: 16px;
+  margin: 1.5em 0;
+  color: #aaa;
+  font-style: italic;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* ===== Page Title ===== */
+.page-title {
+  padding: 60px 0 24px;
+}
+
+.page-title h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  border-top: 1px solid #2a2a2a;
+  padding: 32px 0;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .intro h1,
+  .post-header h1,
+  .page-title h1 {
+    font-size: 1.6rem;
+  }
+
+  .site-header .container {
+    height: 52px;
+  }
+
+  .site-title {
+    font-size: 1.1rem;
+  }
+
+  .site-nav {
+    gap: 16px;
+  }
+
+  .intro {
+    padding: 40px 0 32px;
+  }
+
+  .section {
+    padding: 28px 0;
+  }
+}
